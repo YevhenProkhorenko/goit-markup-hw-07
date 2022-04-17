@@ -34,9 +34,7 @@
     right: 8px;
     width: 30px;
     height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     padding: 0;
     border-radius: 50%;
     background: var(--primary-page-color);
@@ -131,9 +129,7 @@
 }
 
 .modal-checkbox-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     font-size: 14px;
 }
 
