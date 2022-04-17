@@ -162,42 +162,9 @@ img {
   align-items: center;
 }
 
-.text-navigation {
-  color: var(--secondary-text-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--main-cubic-bezier);
-}
-
-.text-navigation:hover,
-.text-navigation:focus {
-  color: var(--accent-page-color);
-}
-
-.text-navigation.current {
-  color: var(--accent-page-color);
-}
-
-.list-contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.contacts-margin:not(:last-child) {
-  margin-right: 50px;
-}
-
 .nav-list {
   display: flex;
   align-items: center;
-}
-
-.nav-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-list-item {
-  position: relative;
 }
 
 .nav-list .current::after {
@@ -213,7 +180,39 @@ img {
   border-style: solid;
 }
 
-.contacts-link {
+.nav-list__item {
+  position: relative;
+}
+
+.nav-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list__text {
+  color: var(--secondary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--main-cubic-bezier);
+}
+
+.nav-list__text:hover, .nav-list__text:focus {
+  color: var(--accent-page-color);
+}
+
+.nav-list__text.current {
+  color: var(--accent-page-color);
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts__list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
   display: flex;
   align-items: center;
   font-family: inherit;
@@ -224,12 +223,11 @@ img {
   transition-timing-function: var(--main-cubic-bezier);
 }
 
-.contacts-link:focus,
-.contacts-link:hover {
+.contacts__link:focus, .contacts__link:hover {
   color: var(--accent-page-color);
 }
 
-.header-icon {
+.contacts__icon {
   fill: var(--primary-text-color);
   margin-right: 10px;
   cursor: pointer;
@@ -238,8 +236,8 @@ img {
   transition-timing-function: var(--main-cubic-bezier);
 }
 
-.contacts-link:focus .header-icon,
-.contacts-link:hover .header-icon {
+.contacts__link:focus .contacts__icon,
+.contacts__link:hover .contacts__icon {
   fill: var(--accent-page-color);
 }
 
@@ -255,7 +253,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.accent {
+.logo-main_accent {
   color: var(--accent-page-color);
 }
 
@@ -269,7 +267,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.logo-accent {
+.logo-footer_accent {
   color: var(--primary-page-color);
 }
 
