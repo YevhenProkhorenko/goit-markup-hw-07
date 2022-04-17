@@ -69,6 +69,16 @@
   letter-spacing: 0.03em;
 }
 
+.activity__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-page-color);
+}
+
 .portfolio-tittle {
   margin-bottom: 4px;
   font-weight: 700;
@@ -479,11 +489,6 @@ img {
   fill: var(--accent-page-color);
 }
 
-.advantages-icons {
-  width: 70px;
-  height: 70px;
-}
-
 .advantages-icon-box {
   display: flex;
   justify-content: center;
@@ -495,32 +500,32 @@ img {
   border-radius: 4px;
 }
 
-.company-advantages {
+.advantages {
   display: flex;
   align-items: center;
 }
 
-.advantages:not(:last-child) {
+.advantages__list:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-advantages {
+.section-activity {
   padding-top: 0px;
 }
 
-.image-company {
+.activity {
   display: flex;
 }
 
-.image-item:not(:last-child) {
+.activity__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.wrapper-company-item {
+.activity__image-wrapper {
   position: relative;
 }
 
-.image-company-text {
+.activity__text-wrapper {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -530,16 +535,6 @@ img {
   height: 70px;
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
-}
-
-.image-company-text p {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-page-color);
 }
 
 .section-team {
