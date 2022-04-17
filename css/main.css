@@ -54,6 +54,14 @@
   color: var(--secondary-text-color);
 }
 
+.modal-form__tittle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
 .text {
   width: 270px;
   font-size: 14px;
@@ -306,6 +314,11 @@ img {
   transition: color 250ms var(--main-cubic-bezier), background 250ms var(--main-cubic-bezier);
 }
 
+.button:hover {
+  color: var(--primary-page-color);
+  background: var(--background-button-color);
+}
+
 .backdrop-modal {
   position: fixed;
   top: 0;
@@ -352,20 +365,11 @@ img {
   cursor: pointer;
 }
 
-.modal-btn-close:focus,
-.modal-btn-close:hover {
+.modal-btn-close:focus, .modal-btn-close:hover {
   fill: var(--accent-page-color);
 }
 
-.tittle-modal-form {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.modal-form-label {
+.modal-form__label {
   display: block;
   margin-top: 10px;
   font-size: 12px;
@@ -375,11 +379,11 @@ img {
   color: #757575;
 }
 
-.modal-form-label:first-of-type {
+.modal-form__label:first-of-type {
   margin-top: 12px;
 }
 
-.modal-form-input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -390,15 +394,9 @@ img {
   transition: border-color 250ms var(--main-cubic-bezier);
 }
 
-.modal-form-input:focus,
-.modal-form-input:hover {
+.modal-form__input:focus, .modal-form__input:hover {
   outline: none;
   border-color: var(--accent-page-color);
-}
-
-.modal-form-input:focus + .modal-icons,
-.modal-form-input:hover + .modal-icons {
-  fill: var(--accent-page-color);
 }
 
 .modal-textarea {
@@ -411,17 +409,11 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
-  transition: border-color 250ms var(--main-cubic-bezier), color 250ms var(--main-cubic-bezier);
+  transition: border-color 250ms var(--main-cubic-bezier);
 }
 
-.modal-textarea:focus,
-.modal-textarea:hover {
+.modal-textarea:focus, .modal-textarea:hover {
   border-color: var(--accent-page-color);
-}
-
-.modal-textarea:focus::placeholder,
-.modal-textarea:hover::placeholder {
-  color: var(--accent-page-color);
 }
 
 .modal-checkbox-wrapper {
@@ -445,12 +437,12 @@ img {
 
 .checkbox-icon {
   display: inline-block;
+  margin-right: 8px;
   content: '';
   width: 16px;
   height: 15px;
   border: 2px solid var(--secondary-text-color);
   cursor: pointer;
-  margin-right: 8px;
   border-radius: 2px;
 }
 
@@ -460,11 +452,6 @@ img {
   background-repeat: no-repeat;
   background-color: var(--accent-page-color);
   border-color: var(--accent-page-color);
-}
-
-.button:hover {
-  color: var(--primary-page-color);
-  background: var(--background-button-color);
 }
 
 .modal-form .button {
@@ -479,12 +466,17 @@ img {
   margin-top: 4px;
 }
 
-.modal-icons {
+.modal__icons {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
   transition: fill 250ms var(--main-cubic-bezier);
+}
+
+.modal-form__input:focus + .modal__icons,
+.modal-form__input:hover + .modal__icons {
+  fill: var(--accent-page-color);
 }
 
 .advantages-icons {
