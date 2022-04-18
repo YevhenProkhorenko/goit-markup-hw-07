@@ -541,7 +541,20 @@ img {
   background-color: var(--team-section-color);
 }
 
-.team-initials {
+.team-list {
+  display: flex;
+}
+
+.team-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-card__initials {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -550,18 +563,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.team-card {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.сard-background {
-  background: var(--primary-page-color);
-  box-shadow: 0px 1px 3px var(--first-card-shadow), 0px 1px 1px var(--second-card-shadow), 0px 2px 1px var(--third-card-shadow);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-position {
+.team-card__position {
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.18;
@@ -570,24 +572,23 @@ img {
   margin-bottom: 16px;
 }
 
+.сard-background {
+  background: var(--primary-page-color);
+  box-shadow: 0px 1px 3px var(--first-card-shadow), 0px 1px 1px var(--second-card-shadow), 0px 2px 1px var(--third-card-shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .social-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social-list-icon {
-  fill: var(--social-icon-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--main-cubic-bezier);
-}
-
-.social-list-item:not(:last-child) {
+.social-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-list-link {
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -599,14 +600,21 @@ img {
   transition-timing-function: var(--main-cubic-bezier);
 }
 
-.social-list-link:focus,
-.social-list-link:hover {
+.social-list__link:focus,
+.social-list__link:hover {
   background-color: var(--accent-page-color);
 }
 
-.social-list-link:focus .social-list-icon,
-.social-list-link:hover .social-list-icon {
+.social-list__link:focus .social-list__icon,
+.social-list__link:hover .social-list__icon {
   fill: var(--primary-page-color);
+}
+
+.social-list__icon {
+  fill: var(--social-icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--main-cubic-bezier);
 }
 
 .clients {
