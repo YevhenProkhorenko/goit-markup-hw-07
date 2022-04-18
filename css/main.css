@@ -861,8 +861,8 @@ img {
   transition: transform 250ms var(--main-cubic-bezier), overflow 250ms var(--main-cubic-bezier);
 }
 
-.portfolio-image-link:hover .overlay-portfolio,
-.portfolio-image-link:focus .overlay-portfolio {
+.portfolio-image__link:hover .overlay-portfolio,
+.portfolio-image__link:focus .overlay-portfolio {
   transform: translateY(0);
   overflow: visible;
 }
