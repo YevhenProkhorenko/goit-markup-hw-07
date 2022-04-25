@@ -24,26 +24,26 @@
 
 	<body class="page">
 		<header class="header">
-			<div class="container header-container">
+			<div class="container header__container">
 				<nav class="navigation">
-					<a class="logo link" href="./index.html" lang="en">
-						<span class="logo-main_accent">Web</span>
+					<a class="logo" href="./index.html" lang="en">
+						<span class="logo__accent">Web</span>
 						Studio
 					</a>
-					<ul class="list nav-list">
+					<ul class="nav-list">
 						<li class="nav-list__item">
-							<a class="link nav-list__text current" href="./index.html">Студия</a>
+							<a class="nav-list__link nav-list__link--current" href="./index.html">Студия</a>
 						</li>
 						<li class="nav-list__item">
-							<a class="link nav-list__text" href="./portfolio.html">Портфолио</a>
+							<a class="nav-list__link" href="./portfolio.html">Портфолио</a>
 						</li>
 						<li class="nav-list__item">
-							<a class="link nav-list__text" href="">Контакты</a>
+							<a class="nav-list__link" href="">Контакты</a>
 						</li>
 					</ul>
 				</nav>
 				<ul class="contacts">
-					<li class="contacts__list">
+					<li class="contacts__item">
 						<a class="contacts__link" href="mailto:info@devstudio.com">
 							<svg class="contacts__icon" width="16px" height="12px">
 								<use href="./images/icons.svg#mail"></use>
@@ -51,7 +51,7 @@
 							info@devstudio.com
 						</a>
 					</li>
-					<li class="contacts__list">
+					<li class="contacts__item">
 						<a class="contacts__link" href="tel:+380961111111">
 							<svg class="contacts__icon" width="10px" height="16px">
 								<use href="./images/icons.svg#smartphone"></use>
@@ -66,15 +66,15 @@
 		<main>
 			<section class="hero overlay">
 				<div class="container">
-					<h1 class="main-tittle">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+					<h1 class="hero__tittle">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
 					<button type="button" class="button" data-modal-open>Заказать услугу</button>
 				</div>
 			</section>
 
 			<section class="section">
 				<div class="container">
-					<h2 class="primary-tittle visually-hidden">Преимущества компании</h2>
-					<ul class="list advantages">
+					<h2 class="section-tittle visually-hidden">Преимущества компании</h2>
+					<ul class="advantages">
 						<li class="advantages__list">
 							<div class="advantages-icon-box">
 								<svg width="70" height="70">
@@ -117,47 +117,42 @@
 				</div>
 			</section>
 
-			<section class="section section-activity">
+			<section class="section section--no-padding-top">
 				<div class="container">
-					<h2 class="primary-tittle">Чем мы занимаемся</h2>
-					<ul class="list activity">
-						<li class="activity__item">
-							<div class="activity__image-wrapper">
+					<h2 class="section-tittle">Чем мы занимаемся</h2>
+					<ul class="activity">
+						<li class="activity__item">							
 								<img src="./images/img.jpg" alt="Набор текста на клавиатуре" width="370" height="294" />
-								<div class="activity__text-wrapper">
+								<div class="activity__wrapper">
 									<p class="activity__text">Десктопные приложения</p>
-								</div>
-							</div>
+								</div>							
 						</li>
 						<li class="activity__item">
-							<div class="activity__image-wrapper">
+							
 								<img src="./images/img2.jpg" alt="Набор текста на клавиатуре" width="370" height="294" />
-								<div class="activity__text-wrapper">
+								<div class="activity__wrapper">
 									<p class="activity__text">Мобильные приложения</p>
-								</div>
-							</div>
+								</div>							
 						</li>
-						<li class="activity__item">
-							<div class="activity__image-wrapper">
+						<li class="activity__item">							
 								<img src="./images/img3.jpg" alt="Набор текста на клавиатуре" width="370" height="294" />
-								<div class="activity__text-wrapper">
+								<div class="activity__wrapper">
 									<p class="activity__text">Дизайнерские решения</p>
-								</div>
-							</div>
+								</div>							
 						</li>
 					</ul>
 				</div>
 			</section>
 
-			<section class="section section-team">
+			<section class="section section--other-background">
 				<div class="container">
-					<h2 class="primary-tittle">Наша команда</h2>
-					<ul class="list team-list">
-						<li class="team-list__item сard-background">
+					<h2 class="section-tittle">Наша команда</h2>
+					<ul class="team-list">
+						<li class="team-list__item">
 							<img src="./images/team1.jpg" alt="Мужчина в очках" width="270" height="260" />
 							<div class="team-card">
-								<h3 class="team-card__initials">Игорь Демьяненко</h3>
-								<p class="team-card__position">Product Designer</p>
+								<h3 class="team-card__tittle">Игорь Демьяненко</h3>
+								<p class="team-card__text">Product Designer</p>
 								<ul class="social-list">
 									<li class="social-list__item">
 										<a class="social-list__link" href="https://www.instagram.com/" target="_blank">
@@ -190,11 +185,11 @@
 								</ul>
 							</div>
 						</li>
-						<li class="team-list__item сard-background">
+						<li class="team-list__item">
 							<img src="./images/team2.jpg" alt="Женщина в очках" width="270" />
 							<div class="team-card">
-								<h3 class="team-card__initials">Ольга Репина</h3>
-								<p class="team-card__position">Frontend Developer</p>
+								<h3 class="team-card__tittle">Ольга Репина</h3>
+								<p class="team-card__text">Frontend Developer</p>
 								<ul class="social-list">
 									<li class="social-list__item">
 										<a class="social-list__link" href="https://www.instagram.com/" target="_blank">
@@ -227,11 +222,11 @@
 								</ul>
 							</div>
 						</li>
-						<li class="team-list__item сard-background">
+						<li class="team-list__item">
 							<img src="./images/team3.jpg" alt="Мужчина" width="270" />
 							<div class="team-card">
-								<h3 class="team-card__initials">Николай Тарасов</h3>
-								<p class="team-card__position">Marketing</p>
+								<h3 class="team-card__tittle">Николай Тарасов</h3>
+								<p class="team-card__text">Marketing</p>
 								<ul class="social-list">
 									<li class="social-list__item">
 										<a class="social-list__link" href="https://www.instagram.com/" target="_blank">
@@ -264,11 +259,11 @@
 								</ul>
 							</div>
 						</li>
-						<li class="team-list__item сard-background">
+						<li class="team-list__item">
 							<img src="./images/team4.jpg" alt="Мужчина в очках" width="270" />
 							<div class="team-card">
-								<h3 class="team-card__initials">Михаил Ермаков</h3>
-								<p class="team-card__position">UI Designer</p>
+								<h3 class="team-card__tittle">Михаил Ермаков</h3>
+								<p class="team-card__text">UI Designer</p>
 								<ul class="social-list">
 									<li class="social-list__item">
 										<a class="social-list__link" href="https://www.instagram.com/" target="_blank">
@@ -307,7 +302,7 @@
 
 			<section class="section">
 				<div class="container">
-					<h2 class="primary-tittle">Постоянные клиенты</h2>
+					<h2 class="section-tittle">Постоянные клиенты</h2>
 					<ul class="clients-list">
 						<li class="clients-list__item">
 							<a class="clients-list__link" href="">
@@ -359,7 +354,7 @@
 			<div class="container footer-wrapper">
 				<div class="address-list__contacts-wrapper">
 					<a class="footer-logo link" href="./index.html" lang="en">
-						<span class="logo-main_accent">Web</span>
+						<span class="logo__accent">Web</span>
 						<span class="logo-footer_accent">Studio</span>
 					</a>
 					<address class="address">

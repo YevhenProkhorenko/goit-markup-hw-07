@@ -1,19 +1,20 @@
-.section-activity {
+.section--no-padding-top{
     padding-top: 0px;
+
 }
 
 .activity {
     display: flex;
 }
+.activity__item{
+position: relative;
+&:not(:last-child) {
 
-.activity__item:not(:last-child) {
     margin-right: 30px;
 }
-.activity__image-wrapper{
-    position: relative;
 }
 
-.activity__text-wrapper {
+.activity__wrapper {
     position: absolute;
     bottom: 0;
     left: 0;

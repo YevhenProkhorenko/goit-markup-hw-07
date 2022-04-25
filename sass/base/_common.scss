@@ -12,6 +12,7 @@ ol {
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
+    list-style-type: none;
 }
 
 img {
@@ -19,14 +20,13 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-.list {
-    list-style-type: none;
+a{
+text-decoration: none;
 }
 
-.link {
-    text-decoration: none;
-}
+
+
+
 .page {
     color: var(--primary-text-color);
     font-family: "Roboto", sans-serif;

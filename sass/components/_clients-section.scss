@@ -5,11 +5,11 @@
 .clients-list__item {
     width: 170px;
     height: 92px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.clients-list__item:not(:last-child) {
-    margin-right: 30px;
-}
 .clients-list__link {
     @include flex;
     width: 100%;
